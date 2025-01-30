@@ -1,0 +1,19 @@
+p{
+  background-color: bisque;
+}
+
+.primerParrafo{
+  color: red;
+  border: 2px solid red;
+}
+
+.azul{
+  color: blue;
+}
+
+#importante{
+  color: blueviolet;
+  background-color: greenyellow;
+  border: 3px solid blueviolet;
+  text-align: center;
+}
