@@ -28,6 +28,7 @@ En el for:
 //     console.log(i)
 // }
 // i = i+1
+// i += 1
 // i++
 
 

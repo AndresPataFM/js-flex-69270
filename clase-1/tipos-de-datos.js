@@ -69,3 +69,5 @@ console.log("Ejemplo de porque calcular con flotantes puede causar errores:", "1
 // Ver tipo de dato
 🔹 typeof variable => dice el tipo de variable 
 */
+
+// UTF-16: https://www.fileformat.info/info/charset/UTF-16/list.htm

@@ -14,7 +14,7 @@ false //falso
 /*
     numeros distintos a 0
     strings no vacios
-    objetos menos document.all (los arrays son objetos)
+    objetos complejos menos document.all (los arrays son objetos)
     Infinity
     "0" es truthy 
 */
@@ -101,7 +101,7 @@ De respetarse, retorna ture, sino false
 
 
 ❓Cosas raras:
-◽Si se comparan dos tipos de datos distintos, Js va a hacer conversiones de tipo hasta podr compararlos
+◽Si se comparan dos tipos de datos distintos, Js va a hacer conversiones de tipo hasta poder compararlos
 ◽Si se comparan 2 strings revisa su orden en unicode UTF-16 de cada caracter hasta encontrar uno que sea mayor que el otro, al encontrarlo declara cual es mayor
 ◽En arrays se ve un comportamiento igual al string, revisa en orden los valores hasta encontrar el mayor y ahí para
 ◽Se rompe con objetos que no son arrays, siempre da falso
