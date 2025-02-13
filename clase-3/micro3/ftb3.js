@@ -6,8 +6,17 @@ let importe = prompt("Ingresa el importe sobre el cual quieres calcular el IVA:"
 const precioConIVA = imp, iva => imp * iva;
 precioConIVA(importe, IVA) 
 */
+const IVA = 1.21;
+let importe = Number(prompt("Ingresa el importe sobre el cual quieres calcular el IVA:"));
+
+const precioConIVA = imp => {
+  let resultado = imp * IVA
+  resultado = Math.round((resultado + Number.EPSILON )*100)/100
+  return resultado
+};
 
 
+console.log(precioConIVA(importe) )
 
 
 // ¿Qué tiene que hacer este código?
