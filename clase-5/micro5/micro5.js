@@ -14,13 +14,40 @@ class Persona {
 }
 */
 
+class Persona {
+  // Completa el constructor con los parámetros 'nombre' y 'edad'
+  constructor( nombre, edad) {
+    this.nombre = nombre;
+    this.edad = edad;
+  }
+
+  // Completa el método 'saludar' para que retorne un mensaje de saludo
+  saludar() {
+    return `Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`;
+  }
+}
 
 
 // Crea una instancia de la clase 'Persona' con el nombre 'Juan' y la edad 30
 
+const juan = new Persona('Juan', 30)
+console.log(juan)
 
 // Llama al método 'saludar' en la instancia y muestra el mensaje resultante
 
+juan.saludar()
+
+console.log(juan.saludar())
 
 // Debería mostrar "Hola, mi nombre es Pedro y tengo 40 años.".
 
+/* juan.nombre = "Pedro"
+
+juan.edad = 40
+
+console.log(juan.saludar()) */
+
+const pedro = new Persona("Pedro", 40)
+console.log(pedro.saludar())
+
+class PersonaAnciana{} // PascalCase
