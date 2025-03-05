@@ -20,6 +20,8 @@ class Usuario{
     this.observados = observados
     for(const texto in comentarios){
       const comm = new Comentario(texto, this.nombre)
+      // nunca los pushie
+      this.comentarios.push(comm)
     }
   }
   crearComentario(textoIngresado){
