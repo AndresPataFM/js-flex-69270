@@ -24,11 +24,12 @@
 // 🛑 significa no hay return
 
 const test = ["💙", "💜", "💚"]
+
 // 🔶  ✅forEach() 💖🛑 (rara vez destructivo)🔶
 // "A cada"
 // 🔹 Recorre el array y ejecuta una función por cada elemento.
 // 🔹 NO TIENE RETURN
-// 🔹 No modifica array original
+// 🔹 No modifica array original (al menos que ustedes hagan que suceda)
 
 /* 
 const array = [0,1,2,3,3,4]
@@ -139,6 +140,9 @@ console.log(array.map((elemento)=>{
 // 🔹 con una , al final se pone el valor inicial del total
 // 🔹 RETORNA UN NÚMERO
 /* 
+const valorReducido = array.reduce(funcion, valorInicialAcumulador)
+*/
+/* 
 const valorReducido = array.reduce((total, elemento)=>{
     return total + operación
 }, valorInicial)
@@ -158,6 +162,7 @@ const valorReducido = array.reduce((total, elemento)=>{
 // 🔹 si el return es negativo, pone a primero el elemento 1
 // 🔹 si el return es positivo, pone primero el elemento 2
 // 🔹 si el return es 0 mantiene el orden
+// 🔹 es un bubble sort
 // 🔹 Orden:
 //   ◽ (element1-element2) es de menor a mayor 
 //   ◽ (element2-element1) es de mayor a menor

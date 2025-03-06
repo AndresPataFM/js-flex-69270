@@ -4,15 +4,21 @@ const numeros = [3, 9, 5, 2, 8, 7];
 const tieneNumeroPar = numeros.find((num) => num % 2 === 0);
 ¿Esto es Verdadero o Falso?
 */
-
-
+// El find encuentra el primer valor par
+// PERO, yo usaría some
+const numeros = [3, 9, 5, 2, 8, 7]
+const tieneNumeroPar = numeros.some((num) => num % 2 === 0)
+console.log(tieneNumeroPar)
 
 /* 
 Ejercicio 2: Usa el método `filter` para obtener todos los nombres que tienen más de 5 letras.
 const nombres = ['Ana', 'Juan', 'María', 'Luisa', 'Pedro', 'Pablo'];
 const nombresLargos = nombres.filter((name) => name.length > 5);
 */
+const nombres = ['Ana', 'Juan', 'María', 'Luisa', 'Pedro', 'Pablo', "Andrés", "Matías"];
+const nombresLargos = nombres.filter((name) => name.length > 5);
 
+console.log(nombresLargos)
 
 
 /* 
@@ -24,6 +30,11 @@ const celsiusTemps = fahrenheitTemps.map((fahrenheit) => ((fahrenheit - 32) * 5)
 
 */
 
+// No son diferentes
+const fahrenheitTemps = [32, 68, 86, 104, 212];
+const celsiusTemps = fahrenheitTemps.map((fahrenheit) => ((fahrenheit - 32) * 5) / 9);
+
+console.log(fahrenheitTemps)
 
 
 // 

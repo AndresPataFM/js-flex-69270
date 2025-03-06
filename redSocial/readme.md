@@ -6,4 +6,4 @@ Funcionalidades a agregar
 
 Arreglar
 
-* comentarios guardados
+* comentarios guardados => Solucionado, no se habían pusheado
