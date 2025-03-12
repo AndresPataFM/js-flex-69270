@@ -1,0 +1,1 @@
+Estos ejemplos se guardan para que haya más repertorio en código viejo hasta que haya una lista comprensiva de todos los ejemplos de DOM.
