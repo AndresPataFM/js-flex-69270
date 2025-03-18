@@ -1,0 +1,19 @@
+.rojo{
+  background-color: darkred;
+}
+
+.azul{
+  background-color: dodgerblue;
+}
+
+.verde{
+  background-color: darkgreen;
+}
+
+.grande{
+  font-size: large;
+}
+
+.borde{
+  border: 3px solid red;
+}
