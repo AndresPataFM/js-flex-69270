@@ -2,8 +2,10 @@ Funcionalidades a agregar
 
 * login
 * ver comentarios de observados
-* guardar cambios en la "base de datos"(localStorage)
+* agregar comentarios públicos y solo apra conocidos
+  * solo ver comentarios públicos+lo de los observados
+* (listo)guardar cambios en la "base de datos"(localStorage) 
 
 Arreglar
 
-* comentarios guardados => Solucionado, no se habían pusheado
+* (listo)comentarios guardados => Solucionado, no se habían pusheado

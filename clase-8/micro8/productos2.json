@@ -1,0 +1,38 @@
+[
+    {
+        "id": 12345,
+        "nombre": "ASDASD",
+        "precio": 58799.00,
+        "stock": 20
+    },
+    {
+        "id": 22345,
+        "nombre": "CPU",
+        "precio": 588999.00,
+        "stock": 32
+    },
+    {
+        "id": 34456,
+        "nombre": "GPU",
+        "precio": 138889.00,
+        "stock": 30
+    },
+    {
+        "id": 467567,
+        "nombre": "RAM",
+        "precio": 278500.00,
+        "stock": 26
+    },
+    {
+        "id": 562578,
+        "nombre": "SSD",
+        "precio": 448999.00,
+        "stock": 18
+    },
+    {
+        "id": 6789,
+        "nombre": "SSD M.2",
+        "precio": 188499.00,
+        "stock": 52
+    }
+]
