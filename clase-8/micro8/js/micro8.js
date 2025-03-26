@@ -9,9 +9,46 @@
 const productos = []
 const lista = document.querySelector("#listaProd")
 const error = document.getElementById("error")
+// const linkAJSON = "./productos.json" // Para index
+const linkAJSON = "../productos.json" // Para productos
 
+class Producto {
+    constructor(obj){
+        this.id = obj.id
+        this.nombre = obj.nombre
+        this.precio = obj.precio
+        this.stock = obj.stock
+    }
+}
 
+function mostrarDatos(){
+    const lista = document.getElementById("productos")
+    lista.innerHTML = ""
+    productos.forEach(prod=>{
+        const li = document.createElement("li")
+        li.innerText = `${prod.id} - ${prod.nombre} ($${prod.precio}) - [stock: ${prod.stock}]`
+        lista.appendChild(li)
+    })
+}
 
+async function pedirDatos(){
+    try {
+        // siempre estos 2 pasos
+        const datosJSON = await fetch(linkAJSON)
+        const datosUtilizables = await datosJSON.json()
+    
+        // Utilizar datos
+        console.log(datosUtilizables)
+        // Si ustedes tienen clases para los objetos, aca hacen un paso intermedio para volver a instanciarlos a travez de la clase
+        datosUtilizables.forEach(prod=>productos.push(prod))
+        mostrarDatos()
+    } catch (error) {
+        const lista = document.getElementById("productos")
+        lista.innerHTML = "Error 404"
+    }
+}
+
+pedirDatos()
 
 
 
