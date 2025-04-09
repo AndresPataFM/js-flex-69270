@@ -216,12 +216,12 @@ async function getData(url = "") {
     });
     return response.json(); // parsea json
 }
-// getData(mockapiURL).then((data) => {
-//     console.log(data);
-// });
+getData(mockapiURL).then((data) => {
+    console.log(data);
+});
 
 
-// DDOS casero
+// DDOS casero, disclaimer, esto es ilegal
 // while(true){
 //     getData(mockapiURL).then((data) => {
 //         console.log(data);
@@ -255,9 +255,9 @@ async function deleteData(url = "", id) {
     return response.json(); // parsea json
 }
 // El id Cambia
-deleteData(mockapiURL, 2).then((data) => {
-    console.log(data);
-}); 
+// deleteData(mockapiURL, 1).then((data) => {
+//     console.log(data);
+// }); 
 
 
 

@@ -17,11 +17,12 @@ document.getElementById('showAlertButton').addEventListener(_____, async () => {
 
 */
 
+"showAlertButton"
 document.getElementById('showAlertButton').addEventListener("click", async () => {
     try {
         // Completar aquí: Utilizar SweetAlert para mostrar un mensaje de éxito
         await Swal.fire({
-            icon: 'info',
+            icon: 'success',
             title: '¡Éxito!',
             text: 'Mensaje de éxito mostrado con SweetAlert.',
         });
